@@ -22,7 +22,7 @@ export default function App() {
     formData.append('file', file)
 
     try {
-      const res = await fetch('http://localhost:8000/predict', {
+      const res = await fetch('https://ai-detector-api-b13o.onrender.com/predict', {
         method: 'POST',
         body: formData
       })
@@ -47,7 +47,7 @@ export default function App() {
     formData.append('file', file)
 
     try {
-      const res = await fetch('http://localhost:8000/predict-video', {
+      const res = await fetch('https://ai-detector-api-b13o.onrender.com/predict-video', {
         method: 'POST',
         body: formData
       })
